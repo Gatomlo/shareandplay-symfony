@@ -1,0 +1,3 @@
+gatomlo_games_catalog:
+    resource: "@GatomloGamesCatalogBundle/Resources/config/routing.yml"
+    prefix:   /

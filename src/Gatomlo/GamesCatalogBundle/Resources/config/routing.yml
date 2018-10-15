@@ -1,0 +1,29 @@
+gatomlo_platform_home:
+    path:      /platform/{page}
+    defaults:
+      _controller: GatomloGamesCatalogBundle:Advert:index
+      page: 1
+    requirements:
+      id:   \d*
+
+gatomlo_platform_view:
+    path:      /platform/advert/{id}
+    defaults: { _controller: GatomloGamesCatalogBundle:Advert:view }
+    requirements:
+        id:   \d+
+
+gatomlo_platform_add:
+    path:      /platform/add
+    defaults: { _controller: GatomloGamesCatalogBundle:Advert:add }
+
+gatomlo_platform_edit:
+    path:      /platform/edit/{id}
+    defaults: { _controller: GatomloGamesCatalogBundle:Advert:edit }
+    requirements:
+      id:   \d*
+
+gatomlo_platform_edit:
+    path:      /platform/delete/{id}
+    defaults: { _controller: GatomloGamesCatalogBundle:Advert:delete }
+    requirements:
+      id:   \d*
